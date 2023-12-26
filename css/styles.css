@@ -5,16 +5,28 @@ body {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 h1,
 h2,
 h3 {
   font-family: Roboto;
+  margin: 0;
 }
 a {
   text-decoration: none;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* HEADER */
 .logo {
   font-family: Raleway, sans-serif;
   color: #4d5ae5;
@@ -23,11 +35,16 @@ a {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin: 25.5px 0 25.5px 200px;
 }
 .name {
   color: #2e2f42;
 }
-
+.item-navigation {
+  display: flex;
+  padding: 24px 332px 24px 76px;
+  gap: 40px;
+}
 .link {
   color: #2e2f42;
   font-size: 16px;
@@ -60,6 +77,10 @@ a {
 .address {
   font-style: normal;
 }
+.item-address {
+  display: flex;
+  gap: 40px;
+}
 .contacts {
   color: currentColor;
   font-size: 16px;
@@ -77,9 +98,27 @@ a {
 .contacts:focus {
   color: #404bbf;
 }
+.container-header {
+  display: flex;
+  width: 1440px;
+  height: 72px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+/* MAIN Section1 */
 .section-page {
   background: #2e2f42;
 }
+.container-section-page {
+  width: 1440px;
+  height: 600px;
+}
+
 .page-title {
   color: #fff;
   text-align: center;
@@ -87,6 +126,7 @@ a {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  padding: 188px 472px 0;
 }
 .button {
   background: #4d5ae5;
@@ -96,6 +136,12 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 48px 635px 188px;
 }
 .button:hover {
   background: #404bbf;
@@ -103,6 +149,8 @@ a {
 .button:focus {
   background: #404bbf;
 }
+
+/* NAIN Section2 */
 .section-about-us {
   color: #2e2f42;
   font-size: 20px;
@@ -110,12 +158,29 @@ a {
   line-height: 24px;
   letter-spacing: 0.4px;
 }
+.container-about-us {
+  width: 1128px;
+  height: 104px;
+  margin: 120px 156px;
+  align-items: center;
+}
+.item-about-us {
+  display: flex;
+  gap: 24px;
+}
+.item-about-us-block {
+  display: block;
+}
 .text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0;
 }
+
+/* MAIN Section3 */
+
 .section-title {
   color: #2e2f42;
   text-align: center;
@@ -124,13 +189,33 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
 }
 .section-our-team {
   background: #f4f4fd;
 }
-.block {
+.item-our-team-block {
   background: #ffffff;
+  display: block;
 }
+.container-our-team {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+}
+.item-our-team {
+  display: flex;
+  gap: 24px;
+  padding: 72px 156px 120px;
+}
+/* MAIN Section3 */
+.container-our-portfolio {
+  width: 1128px;
+  height: 1000px;
+  flex-shrink: 0;
+}
+
+/* FOOTER */
 .footer {
   background: #2e2f42;
 }
@@ -151,4 +236,9 @@ a {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.container-footer {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
 }
