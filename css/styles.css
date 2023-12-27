@@ -35,7 +35,6 @@ img {
   width: 1158px;
   height: 72px;
   align-items: center;
-  flex-shrink: 0;
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
@@ -274,6 +273,7 @@ img {
 }
 .item-our-portfolio-block {
   display: block;
+  width: calc((100% - 48px) / 3);
 }
 .potfolio {
   padding: 32px 16px;
@@ -313,7 +313,8 @@ img {
   height: 24px;
   align-items: center;
   flex-shrink: 0;
-  margin: 100px 0 0 16px;
+  margin-top: 100px;
+  margin-bottom: 16px;
 }
 .footer-logo .name {
   color: #f4f4fd;
