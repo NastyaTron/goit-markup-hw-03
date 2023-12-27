@@ -316,9 +316,11 @@ img {
   flex-shrink: 0;
   margin-top: 100px;
   margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-logo .name {
   color: #f4f4fd;
+  display: inline-block;
 }
 .footer-text {
   color: #f4f4fd;
