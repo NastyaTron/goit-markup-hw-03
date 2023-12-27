@@ -274,6 +274,7 @@ img {
 }
 .item-our-portfolio-block {
   display: block;
+  width: calc((100% - 48px) / 3);
 }
 .potfolio {
   padding: 32px 16px;
@@ -302,6 +303,7 @@ img {
   padding: 100px 0;
 }
 .footer-logo {
+  display: inline-block;
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -317,7 +319,6 @@ img {
 }
 .footer-logo .name {
   color: #f4f4fd;
-  display: inline-block;
 }
 .footer-text {
   color: #f4f4fd;
