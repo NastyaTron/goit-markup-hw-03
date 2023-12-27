@@ -270,10 +270,10 @@ img {
   gap: 24px;
   flex-wrap: wrap;
   row-gap: 48px;
+  width: calc((100% - 48px) / 3);
 }
 .item-our-portfolio-block {
   display: block;
-  width: calc((100% - 48px) / 3);
 }
 .potfolio {
   padding: 32px 16px;
@@ -309,7 +309,6 @@ img {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   font-weight: 700;
-  display: inline-block;
   height: 24px;
   align-items: center;
   flex-shrink: 0;
@@ -318,6 +317,7 @@ img {
 }
 .footer-logo .name {
   color: #f4f4fd;
+  display: inline-block;
 }
 .footer-text {
   color: #f4f4fd;
