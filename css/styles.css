@@ -24,16 +24,8 @@ img {
   display: block;
   max-width: 100%;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .container {
-  display: flex;
   width: 1158px;
-  height: 72px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
@@ -43,6 +35,9 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
+.header-two {
+  display: flex;
+}
 .logo {
   font-family: Raleway, sans-serif;
   color: #4d5ae5;
@@ -51,7 +46,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin: 25.5px 76px 25.5px 200px;
+  margin-right: 76px;
 }
 .name {
   color: #2e2f42;
@@ -59,6 +54,7 @@ img {
 .item-navigation {
   display: flex;
   gap: 40px;
+  margin: 24px 0;
 }
 .link {
   color: #2e2f42;
@@ -96,6 +92,7 @@ img {
 .item-address {
   display: flex;
   gap: 40px;
+  padding: 24px 0 24px 332px;
 }
 .contacts {
   color: currentColor;
@@ -132,10 +129,12 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  padding: 188px 472px 0;
   max-width: 496px;
+  margin: 0 auto;
 }
 .button {
+  display: block;
+  margin: 48px auto;
   background: #4d5ae5;
   cursor: pointer;
   color: #fff;
@@ -148,11 +147,10 @@ img {
   gap: 10px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin: 48px 635px 188px;
-  display: block;
   min-width: 169px;
   height: 56px;
   border: none;
+  text-align: center;
 }
 .button:hover {
   background: #404bbf;
@@ -202,7 +200,10 @@ img {
 }
 
 /* MAIN Section3 */
-
+.section-our-team {
+  background: #f4f4fd;
+  padding: 120px 0;
+}
 .title-our-team {
   color: #2e2f42;
   text-align: center;
@@ -211,13 +212,9 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
-.section-our-team {
-  background: #f4f4fd;
-  padding: 120px 0;
-}
+
 .item-our-team-block {
   background: #ffffff;
   display: block;
@@ -269,10 +266,8 @@ img {
   gap: 24px;
   flex-wrap: wrap;
   row-gap: 48px;
-  width: calc((100% - 48px) / 3);
 }
 .item-our-portfolio-block {
-  display: block;
   width: calc((100% - 48px) / 3);
 }
 .potfolio {
@@ -312,7 +307,6 @@ img {
   height: 24px;
   align-items: center;
   flex-shrink: 0;
-  margin-top: 100px;
   margin-bottom: 16px;
   display: inline-block;
 }
